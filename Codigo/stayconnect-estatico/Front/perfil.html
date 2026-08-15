@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - StayConnect</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo">
+        <img src="img/SC.png" alt="StayConnect Logo" />
+      </a>
+      <nav>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+          <li class="header__menu-item"><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+          <li class="header__menu-item"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+          <li class="header__menu-item"><a id="user-nav" href="login.html"><i class="fas fa-user"></i> Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <div class="profile-sidebar">
+        <div class="profile-header">
+          <i class="fas fa-user-circle profile-icon"></i>
+          <h2 id="profile-username">Mi Perfil</h2>
+        </div>
+        
+        <nav class="profile-nav">
+          <ul>
+            <li>
+              <button id="btn-profile-data" class="profile-nav-btn active">
+                <i class="fas fa-user"></i>
+                Modificar Datos
+              </button>
+            </li>
+            <li>
+              <button id="btn-order-history" class="profile-nav-btn">
+                <i class="fas fa-shopping-bag"></i>
+                Historial de Pedidos
+              </button>
+            </li>
+          </ul>
+        </nav>
+        
+        <button class="btn-logout" id="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          Cerrar sesión
+        </button>
+      </div>
+
+      <div class="profile-content">
+        <div id="profile-data-section" class="profile-section active">
+          <header class="section-header">
+            <h3><i class="fas fa-edit"></i> Modificar Datos Personales</h3>
+          </header>
+          
+          <form id="profile-form" class="profile-form">
+            <div class="form-group">
+              <label for="name">Nombre completo</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="street">Dirección</label>
+              <input type="text" id="street" name="street" placeholder="Calle, número, piso...">
+            </div>
+            
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">
+                <i class="fas fa-save"></i>
+                Guardar Cambios
+              </button>
+              <button type="button" id="delete-account" class="btn btn-danger">
+                <i class="fas fa-trash"></i> Eliminar Cuenta
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div id="order-history-section" class="profile-section">
+          <header class="section-header">
+            <h3><i class="fas fa-shopping-bag"></i> Historial de Pedidos</h3>
+          </header>
+          
+          <div id="orders-container" class="orders-container">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer footer--with-map">
+      <div class="footer--map-area">
+        <div id="stay-map" style="height:100%; width:100%; border-radius:8px; overflow:hidden;"></div>
+      </div>
+      <div class="footer--info">
+        <h4>StayConnect</h4>
+        <p class="footer__text">&copy; 2025 StayConnect</p>
+        <div class="footer--contact">
+          <div><span class="label">Dirección:</span> C. Alcalá, 50, 28014 Madrid</div><br>
+          <div><span class="label">Teléfono:</span> +34 912 345 678</div>
+        </div>
+        <div class="footer--links">
+          <a href="productos.html">Productos</a>
+          <a href="carrito.html">Carrito</a>
+          <a href="perfil.html">Mi cuenta</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer--socials">
+          <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/scripts/perfil.js"></script>
+  </body>
+</html>

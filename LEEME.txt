@@ -1,0 +1,10 @@
+La cuenta de la base de datos es `superuser@gmail.com` y su contraseña, `superuser.`.
+
+Hemos transformado nuestra práctica 3 realizada con vue solo, a vue-ionic, basicamente lo que nos podeía para realizar esta práctica.
+
+Gracias a esto cumplimos los puntos mínimos y tambien uno opcional, que es el del "CRUD de más de un recurso", tenemos el de los historial de pedidos,
+el de los usuarios y el de las reseñas, también contamos con dos formas para navegar, tenemos el de tabs para los productos, home y perfil y 
+luego tenemos en perfil unas pestañas superiores para mostrar el historial de pedidos del usuario o la modificación de los datos de este.
+
+Por último, hemos implementado las notificaciones en tiempo real, que se podrá ver en el video entregado. Lo hemos implementado en el momento
+en que cambie el estado de un pedido, es decir, de "En preparación" a "Enviado" a "Entregado" a "Cancelado" y a "Eliminado".

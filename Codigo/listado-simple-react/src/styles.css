@@ -1,0 +1,93 @@
+:root{
+    --bg: #f7f7f8;
+    --card: #fff;
+    --accent: #173127;
+    --danger: #dc3545
+}
+
+body{
+    margin: 0;
+    font-family: Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+    background: var(--bg);
+    color: #222
+}
+
+.app{
+    max-width: 820px;
+    margin: 36px auto;
+    padding: 0 16px
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+h1{
+    margin: 0;
+    color: var(--accent)
+}
+
+.header-count{
+    margin-left: auto;
+    font-size: 0.95rem;
+    color: #555;
+    background: rgba(0,0,0,0.03);
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.list{
+    list-style: none;
+    padding: 0;
+    margin: 20px 0
+}
+
+.list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--card);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06)
+}
+
+.list-item .content{
+    max-width: 76%
+}
+
+.list-item .meta{
+    margin: 6px 0 0;
+    color: #666;
+    font-size: 0.95rem
+}
+
+.btn{
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer
+}
+
+.btn-delete{
+    background: var(--danger);
+    color: white
+}
+
+.empty{
+    padding: 12px;
+    color: #666
+}
+
+.error{
+    color: #b00020
+}
+
+.footer-note{
+    margin-top: 18px;
+    color: #666;
+    font-size: 0.95rem
+}

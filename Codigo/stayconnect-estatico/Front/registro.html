@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StayConnect - Registro</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="header">
+      <img src="img/SC.png" class="header__logo" alt="StayConnect Logo"/>
+    </header>
+    <main>
+      <form id="registerForm" class="form-container">
+        <h1>Crear cuenta</h1>
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input name="nombre" id="nombre" required/>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input name="email" id="email" type="email" required/>
+        </div>
+        <div class="form-group">
+          <label for="password">Contraseña</label>
+          <input name="password" id="password" type="password" required/>
+        </div>
+        <div class="form-group">
+          <label for="passwordConfirm">Repetir contraseña</label>
+          <input name="passwordConfirm" id="passwordConfirm" type="password" required/>
+        </div>
+        <button class="btn" type="submit">Crear cuenta</button>
+        <div class="form-link-alt">
+          ¿Ya tienes cuenta?
+          <a href="login.html" class="alt-link"><i class="fas fa-arrow-right"></i> Inicia sesión aquí</a>
+        </div>
+      </form>
+    </main>
+    <footer class="footer footer--with-map">
+      <div class="footer--map-area">
+        <div id="stay-map" style="height:100%; width:100%; border-radius:8px; overflow:hidden;"></div>
+      </div>
+      <div class="footer--info">
+        <h4>StayConnect</h4>
+        <p class="footer__text">&copy; 2025 StayConnect</p>
+          <div class="footer--contact">
+            <div><span class="label">Dirección:</span> C. Alcalá, 50, 28014 Madrid</div><br>
+            <div><span class="label">Teléfono:</span> +34 912 345 678</div>
+          </div>
+          <div class="footer--socials">
+            <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </footer>
+    <script type="module" src="js/scripts/registro.js"></script>
+  </body>
+</html>

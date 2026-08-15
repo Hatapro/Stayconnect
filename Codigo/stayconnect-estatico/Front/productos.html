@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StayConnect - Productos</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+  <header class="header" data-component="header">
+    <a href="index.html" class="header__logo">
+      <img src="img/SC.png" alt="StayConnect Logo" />
+    </a>
+    <nav>
+      <ul class="header__menu">
+        <li class="header__menu-item"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+        <li class="header__menu-item"><a href="productos.html"><i class="fas fa-box-open"></i> Productos</a></li>
+        <li class="header__menu-item"><a href="carrito.html"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        <li class="header__menu-item"><a id="user-nav" href="login.html"><i class="fas fa-user"></i> Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="products-container">
+      <aside class="sidebar-filters">
+        <h3>Filtros</h3>
+        
+        <div class="filter-section">
+          <h4>Categorías</h4>
+          <ul id="categories-list" class="filter-list"></ul>
+        </div>
+        
+        <div class="filter-section">
+          <h4>Subcategorías</h4>
+          <ul id="subcategories-list" class="filter-list"></ul>
+        </div>
+        
+        <button id="clear-filters" class="btn-clear-filters">
+          <i class="fas fa-times"></i> Limpiar filtros
+        </button>
+      </aside>
+
+      <div class="content-products">
+        <div class="products-main">
+          <header class="products-header">
+            <h2 class="product-list__title">Todos los productos</h2>
+            <input type="search" id="inputBuscar" placeholder="Buscar productos..."/>
+          </header>
+          
+          <section class="product-list__grid" id="productGrid"></section>
+          <nav id="pagination" class="pagination"></nav>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer footer--with-map" data-component="footer">
+    <div class="footer--map-area">
+      <div id="stay-map" style="height:100%; width:100%; border-radius:8px; overflow:hidden;"></div>
+    </div>
+    <div class="footer--info">
+      <h4>StayConnect</h4>
+      <p class="footer__text">&copy; 2025 StayConnect</p>
+      <div class="footer--contact">
+        <div><span class="label">Dirección:</span> C. Alcalá, 50, 28014 Madrid</div><br>
+        <div><span class="label">Teléfono:</span> +34 912 345 678</div>
+      </div>
+      <div class="footer--socials">
+        <a href="#" aria-label="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/scripts/productos.js"></script>
+  </body>
+</html>
